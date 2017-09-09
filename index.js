@@ -29,7 +29,7 @@ for (i = 0; i < x.length; i++) {
 }
 document.getElementsByClassName('active')[0].style.color = 'black';
 
-  })*/
+  })
   .on('leave', function() {
    document.getElementById('code').classList.remove("active");
     document.getElementById('home').classList.add("active");
@@ -51,7 +51,7 @@ for (i = 0; i < x.length; i++) {
   .addTo(scrollMagicController);
 
 scene.addIndicators();
-  
+  */
 $("#lol").typed({
 		strings: ["Hello...", "My name is Veeral Bhagat..", "I am a second year computer science major.."],
   typeSpeed:50,
