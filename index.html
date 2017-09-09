@@ -1,10 +1,25 @@
-<body >
 
-<div class='button active'>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.14.2/TweenMax.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/1.3.0/jquery.scrollmagic.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/1.3.0/jquery.scrollmagic.debug.js"></script>
+<script src='//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js'></script>
+<!--
+<link rel="stylesheet" href="index.css">
+<script src='index.js'></script>
+-->
+<script
+  
+ src='https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.1/typed.min.js'></script>
+
+
+<body>
+<div id='nav'>
+<div id='home' class='button active'>
 <a><strong>HOME</strong></a>
 </div>
 
-<div class='button'>
+<div id='code'class='button' onClick='generateReport();'>
 <a><strong>CODE</strong></a>
 </div>
 
@@ -15,38 +30,60 @@
 <div class='button'>
 <a><strong>GRAPHICS</strong></a>
 </div>
-
-<p>
-Hello, my name is Veeral Bhagat
-</p>
+  </div>
+<main>
+<p id='lol'>
+Hello, my name is Veeral Bhagat</p>
+</main>
 </body>
-<style>
-  .button{
-  font-family:Calibri;
-  display:inline-block;
-  margin-right:10px;
-  margin-top:10px;
-  margin-left:10px;
-  padding-left:3px;
-  padding-right:3px;
-  transition: all .3s ease-out;
-}
-.button:hover{
-  color:white;
-  background-color:black;
-}
-.active{
-  color:white;
-  background-color:black;
-}
-p{
-  position:absolute;
-  bottom:0px;
-  text-align:center;
-  font-family:Helvetica;
-}
-body{
-  background: url('https://image.prntscr.com/image/1_5WpUXQRpC91TucQIEFvQ.jpg') no-repeat center center fixed;
-  background-size:100vw 100vh;
-}
-</style>
+
+<main id='code_cont'>
+
+  <div class='projects'>
+  <div class='title'>
+  ALL PROJECTS (GITHUB)
+  </div>
+  <div class='line'></div>
+  <div class='text'>
+  Direct link to my GitHub
+  
+  </div>
+  </div>
+  
+  <div class='projects'>
+  <div class='title'>
+  XOR-Encryption Website
+  </div>
+  <div class='line'></div>
+  <div class='text'>
+  Direct link to my XOR-Encryption web application that allows a user to encrypt/decrypt any message of their choosing with a random private key.
+  
+  </div>
+  
+  <div class='footer'>
+  HTML, CSS, Python, JavaScript, jQuery
+  </div>
+  </div>
+  
+  <div class='projects'>
+  <div class='title'>
+  Othello
+  </div>
+  <div class='line'></div>
+  <div class='text'>
+  Strategy based two player game similar in design to Reversi with customizable board sizes and states.
+  
+  </div>
+  
+  <div class='footer'>
+  Python
+  </div>
+  </div>
+  
+  
+</main>
+
+
+
+
+
