@@ -75,7 +75,7 @@ var tween1 = TweenMax.to('.projects', 0.4, {
   })
   .setTween(tween1)
   .addTo(scrollMagicController);
-  scene1.addIndicators();
+  .scene1.addIndicators();
   
   
 });
