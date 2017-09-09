@@ -76,16 +76,16 @@ var tween1 = TweenMax.to('.projects', 0.4, {
   .setTween(tween1)
   .addTo(scrollMagicController);
  
-  
-  
-});
-
-
-$("#code").click(function() {
+	$("#code").click(function() {
     $('body').animate({
         scrollTop: $("#code_cont").offset().top},
         'slow');
         
 
 });
+  
+  
+});
+
+
 
