@@ -4,7 +4,7 @@ $(function() {
 
 
 var tween = TweenMax.to('.button', 0.1, {
-   color:'white',
+   //color:'white',
    //backgroundColor:'white'
   });
 
