@@ -1,10 +1,43 @@
-<div id='background'>
-LOL
+<div class='button active'>
+<a><strong>HOME</strong></a>
 </div>
+
+<div class='button'>
+<a><strong>CODE</strong></a>
+</div>
+
+<div class='button'>
+<a><strong>PHOTOGRAPHY</strong></a>
+</div>
+
+<div class='button'>
+<a><strong>GRAPHICS</strong></a>
+</div>
+
+<p>
+Hello
+</p>
+
 <style>
-  #background{
-  width:100%;
-  height:70%;
-  background: url('https://image.prntscr.com/image/1_5WpUXQRpC91TucQIEFvQ.jpg');
+  .button{
+  font-family:Calibri;
+  display:inline-block;
+  margin-right:10px;
+  margin-left:10px;
+  padding-left:3px;
+  padding-right:3px;
+  transition: all .3s ease-out;
 }
+.button:hover{
+  color:white;
+  background-color:black;
+}
+.active{
+  color:white;
+  background-color:black;
+}
+p{
+  line-height:50vh;
+}
+
 </style>
