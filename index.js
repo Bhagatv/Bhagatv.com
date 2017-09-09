@@ -84,7 +84,12 @@ var tween1 = TweenMax.to('.projects', 0.4, {
         
 
 });
-$('.button').style.color='black';
+	var x = document.getElementsByClassName('button');
+	var i;
+for (i = 0; i < x.length; i++) {
+    x[i].style.color = "black";
+}
+//$('.button').style.color='black';
 
   
   
