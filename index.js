@@ -17,7 +17,7 @@ var tween = TweenMax.to('.button', 0.1, {
     
     
   })
-  .on('enter', function() {
+  /*.on('start', function() {
    document.getElementById('code').classList.add("active");
     document.getElementById('home').classList.remove("active");
     document.getElementsByClassName('active')[0].style.backgroundColor = 'white';
@@ -29,8 +29,8 @@ for (i = 0; i < x.length; i++) {
 }
 document.getElementsByClassName('active')[0].style.color = 'black';
 
-  })
-  /*.on('leave', function() {
+  })*/
+  .on('leave', function() {
    document.getElementById('code').classList.remove("active");
     document.getElementById('home').classList.add("active");
 document.getElementsByClassName("active")[0].style.color='white';
@@ -46,7 +46,7 @@ for (i = 0; i < x.length; i++) {
 
 
 
-  })*/
+  })
   .setTween(tween)
   .addTo(scrollMagicController);
 
