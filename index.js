@@ -33,13 +33,14 @@ document.getElementsByClassName('active')[0].style.color = 'black';
   .on('leave', function() {
    document.getElementById('code').classList.remove("active");
     document.getElementById('home').classList.add("active");
+document.getElementsByClassName("active")[0].style.color='white';
   var x = document.getElementsByClassName("button");  
     var i;
 for (i = 0; i < x.length; i++) {
     x[i].style.color = "black";
     x[i].style.backgroundColor='';
 }
-document.getElementsByClassName("active")[0].style.color='white';
+
 
 
 
@@ -58,7 +59,7 @@ $("#lol").typed({
   showCursor:false
 })
 
-TweenLite.defaultOverwrite = false;
+
 var tween1 = TweenMax.to('.projects', 0.4, {
   width:200,
   height:200,
@@ -69,7 +70,7 @@ var tween1 = TweenMax.to('.projects', 0.4, {
   
   var scene1 = new ScrollScene({
     triggerElement: '#code_cont',
-    offset: 100, /* offset the trigger 150px below #scene's top */
+    offset: 100, 
     
     
   })
@@ -83,6 +84,7 @@ var tween1 = TweenMax.to('.projects', 0.4, {
         
 
 });
+
   
   
 });
