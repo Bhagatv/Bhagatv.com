@@ -17,7 +17,7 @@ var tween = TweenMax.to('.button', 0.1, {
     
     
   })
-  .on('start', function() {
+  .on('enter', function() {
    document.getElementById('code').classList.add("active");
     document.getElementById('home').classList.remove("active");
     document.getElementsByClassName('active')[0].style.backgroundColor = 'white';
