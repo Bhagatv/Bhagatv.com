@@ -58,7 +58,7 @@ $("#lol").typed({
   showCursor:false
 })
 
-
+TweenLite.defaultOverwrite = false;
 var tween1 = TweenMax.to('.projects', 0.4, {
   width:200,
   height:200,
