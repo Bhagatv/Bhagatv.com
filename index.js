@@ -94,7 +94,7 @@ var tween1 = TweenMax.to('#proj_wrapper', 0.4, {
 	});
 //$('.button').style.color='black';
 
-  var tween2 = TweenMax.to('#photo_cont', 0.4, {
+  /*var tween2 = TweenMax.to('#photo_cont', 0.4, {
   //backgroundColor:'#fff',
   width:'100%'
   
@@ -106,11 +106,23 @@ var tween1 = TweenMax.to('#proj_wrapper', 0.4, {
   var scene2 = new ScrollScene({
     triggerElement: '#photo_cont',
     offset:-100 , 
-    duration:100
+    duration:200
     
     
   })
   .setTween(tween2)
   .addTo(scrollMagicController);
-  
+ */ 
+ $(window).scroll(function() {
+    var height = $(window).scrollTop();
+		if(height>1300){
+    $("#photo_cont").clearQueue().animate({ width: '100%' }, 'fast');
+    
+    }
+    else{
+    $("#photo_cont").clearQueue().animate({ width: '0%' }, 'fast');
+    }
+    
+    
+    });
 });
