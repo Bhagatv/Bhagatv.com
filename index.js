@@ -29,6 +29,7 @@ scene.addIndicators();
         var i;
         for(i=0;i<x.length;i++){
         x[i].style.color='white';
+	x[i].style.backgroundColor='black';
         }
    document.getElementsByClassName('button')[1].style.backgroundColor='white';
      document.getElementsByClassName('button')[1].style.color='black';
@@ -39,6 +40,7 @@ scene.addIndicators();
         var i;
         for(i=0;i<x.length;i++){
         x[i].style.color='black';
+	x[i].style.backgroundColor='white';
         }
     }
     document.getElementsByClassName('button')[0].style.backgroundColor='black';
