@@ -77,7 +77,8 @@ text-align:center;
 #proj_wrapper{
  //display:table-layout;
  margin:0 auto;
- width:0;
+ //width:0;
+ //opacity:0;
  //display:none;
  //height:10px;
  
