@@ -52,11 +52,12 @@ scene.addIndicators();
 });
   
   $("#lol").typed({
-		strings: ["Hello...", "My name is Veeral Bhagat..", "I am a second year computer science major.."],
-  typeSpeed:50,
+		strings: ["Hello","My name is Veeral Bhagat", "I am a second year computer science major"],
+  typeSpeed:30,
   loop:true,
   showCursor:false
 })
+
 
 
 /*var tween1 = TweenMax.to('#proj_wrapper', 0.4, {
@@ -181,11 +182,11 @@ $("#photo").click(function() {
     
     $(window).scroll(function() {
     var height = $(window).scrollTop();
-     if (height>700){
-     $("#proj_wrapper").fadeIn();
+     if (height>700 && height < 1400){
+     $("#proj_wrapper").clearQueue().animate({opacity: '1'}).fadeIn('fast');
           }
      else{
-     $("#proj_wrapper").fadeOut();
+     $("#proj_wrapper").css('opacity','0');
      }
     
     
