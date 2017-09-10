@@ -59,7 +59,7 @@ scene.addIndicators();
 })
 
 
-var tween1 = TweenMax.to('#proj_wrapper', 0.4, {
+/*var tween1 = TweenMax.to('#proj_wrapper', 0.4, {
   //width:200,
  // height:200,
   width:790,
@@ -77,6 +77,7 @@ var tween1 = TweenMax.to('#proj_wrapper', 0.4, {
   })
   .setTween(tween1)
   .addTo(scrollMagicController);
+ */
  
 	$("#code").click(function() {
     $('body').animate({
@@ -177,5 +178,17 @@ $("#photo").click(function() {
     
     
 });
+    
+    $(window).scroll(function() {
+    var height = $(window).scrollTop();
+     if (height>700){
+     $("#proj_wrapper").fadeIn();
+          }
+     else{
+     $("#proj_wrapper").fadeOut();
+     }
+    
+    
+    });
     
 });
