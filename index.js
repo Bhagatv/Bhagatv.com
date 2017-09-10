@@ -192,4 +192,15 @@ $("#photo").click(function() {
     
     });
     
+    $(window).scroll(function() {
+    var height = $(window).scrollTop();
+    if (height>100){
+    $("#about").clearQueue().animate({opacity:'1'}).fadeIn();
+    }
+    else{
+    $("#about").clearQueue().animate({opacity:'0'}).fadeOut();
+    }
+    
+    });
+    
 });
