@@ -83,10 +83,17 @@ var tween1 = TweenMax.to('#proj_wrapper', 0.4, {
         scrollTop: $("#code_cont").offset().top},
         'slow');
 
-	
-        
 
 });
+
+$("#photo").click(function() {
+    $('body').animate({
+        scrollTop: $("#photo_cont").offset().top},
+        'slow');
+
+
+});
+	
 	
 	$("#home").click(function() {
     $('body').animate({
