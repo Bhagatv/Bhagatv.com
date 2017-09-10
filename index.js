@@ -21,6 +21,7 @@ var tween = TweenMax.to('.button', 0.1, {
 scene.addIndicators();
   document.getElementsByClassName('button')[0].style.backgroundColor='black';
      document.getElementsByClassName('button')[0].style.color='white';
+  
   $(window).scroll(function() {
     var height = $(window).scrollTop();
 
@@ -51,7 +52,7 @@ scene.addIndicators();
 });
   
   $("#lol").typed({
-		strings: ["Hello...", "My name is Veeral Bhagat..", "I am a second year computer science student.."],
+		strings: ["Hello...", "My name is Veeral Bhagat..", "I am a second year computer science major.."],
   typeSpeed:50,
   loop:true,
   showCursor:false
@@ -125,4 +126,49 @@ var tween1 = TweenMax.to('#proj_wrapper', 0.4, {
     
     
     });
+    
+    $(window).scroll(function() {
+    var height = $(window).scrollTop();
+
+    if(height  > 1500) {
+        var x = document.getElementsByClassName('button');
+        var i;
+        for(i=0;i<x.length;i++){
+        x[i].style.color='black';
+	x[i].style.backgroundColor='lightgray';
+        }
+   document.getElementsByClassName('button')[2].style.backgroundColor='black';
+     document.getElementsByClassName('button')[2].style.color='lightgray';
+     
+     document.getElementsByClassName('button')[0].style.backgroundColor='lightgray';
+     document.getElementsByClassName('button')[0].style.color='black';
+  }
+    
+    else if (height < 1500 && height < 800){
+     var x = document.getElementsByClassName('button');
+        var i;
+        for(i=0;i<x.length;i++){
+        x[i].style.color='black';
+	x[i].style.backgroundColor='white';
+        }
+        document.getElementsByClassName('button')[0].style.backgroundColor='black';
+     document.getElementsByClassName('button')[0].style.color='white';
+    }
+    else if (height < 1500 && height > 800){
+     var x = document.getElementsByClassName('button');
+        var i;
+        for(i=0;i<x.length;i++){
+        x[i].style.color='white';
+	x[i].style.backgroundColor='black';
+        }
+        document.getElementsByClassName('button')[1].style.backgroundColor='white';
+     document.getElementsByClassName('button')[1].style.color='black';
+     
+    }
+    
+    
+    
+    
+});
+    
 });
