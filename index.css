@@ -84,6 +84,9 @@ text-align:center;
  
  
 }
+#about{
+  font-family:Lucida Sans Typewriter;
+}
 .projects{
   display:inline-block;
   //box-sizing: border-box;
