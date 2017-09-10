@@ -194,7 +194,7 @@ $("#photo").click(function() {
     
     $(window).scroll(function() {
     var height = $(window).scrollTop();
-    if (height>100){
+    if (height>=0){
     $("#about").clearQueue().animate({opacity:'1'}).fadeIn();
     }
     else{
