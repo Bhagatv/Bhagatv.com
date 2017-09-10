@@ -47,13 +47,19 @@ body{
   width:100vw;
   height:100px;
 }
-main { padding: 200px 0 500px 0;
-border:1px solid black;
+main { padding: 100px 0 500px 0;
+//border:1px solid black;
 text-align:center;
 
 }
 #code_cont{
   background-color:black;
+  padding: 100px 0 100px 0;
+}
+#photo_cont{
+  width:0%;
+  background-color:lightgray;
+ 
 }
 #nav{
   z-index:1;
@@ -62,10 +68,17 @@ text-align:center;
   //background-color:white;
   position:fixed;
 }
-
+.page_title{
+  font-size:72px;
+  font-family:Helvetica;
+  text-decoration:underline;
+  
+}
 #proj_wrapper{
  //display:table-layout;
  margin:0 auto;
+ width:0;
+ 
  
 }
 .projects{
@@ -75,8 +88,9 @@ text-align:center;
   vertical-align:middle;
   margin:20px;
   font-size:18px;
-  //width:200px;
-  //height:200px;
+  width:200px;
+  height:200px;
+  background-color:lightgray;
   word-wrap:break-word;
  font-family:Helvetica;
  position:relative;
@@ -102,6 +116,7 @@ text-align:center;
 .projects:hover .title{
   margin-top:10px;
 }
+
 .projects:hover .line,.projects:hover .text,.projects:hover .footer{
   display:block;
 }
