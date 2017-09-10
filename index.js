@@ -19,7 +19,34 @@ var tween = TweenMax.to('.button', 0.1, {
   .setTween(tween)
   .addTo(scrollMagicController);
 scene.addIndicators();
-  
+  document.getElementsByClassName('button')[0].style.backgroundColor='black';
+     document.getElementsByClassName('button')[0].style.color='white';
+  $(window).scroll(function() {
+    var height = $(window).scrollTop();
+
+    if(height  > 700) {
+        var x = document.getElementsByClassName('button');
+        var i;
+        for(i=0;i<x.length;i++){
+        x[i].style.color='white';
+        }
+   document.getElementsByClassName('button')[1].style.backgroundColor='white';
+     document.getElementsByClassName('button')[1].style.color='black';
+  }
+    
+    else{
+     var x = document.getElementsByClassName('button');
+        var i;
+        for(i=0;i<x.length;i++){
+        x[i].style.color='black';
+        }
+    }
+    document.getElementsByClassName('button')[0].style.backgroundColor='black';
+     document.getElementsByClassName('button')[0].style.color='white';
+    
+    
+    
+});
   
   $("#lol").typed({
 		strings: ["Hello...", "My name is Veeral Bhagat..", "I am a second year computer science major.."],
@@ -59,4 +86,3 @@ var tween1 = TweenMax.to('.projects', 0.4, {
   
   
 });
-
