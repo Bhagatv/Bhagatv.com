@@ -51,7 +51,7 @@ scene.addIndicators();
 });
   
   $("#lol").typed({
-		strings: ["Hello...", "My name is Veeral Bhagat..", "I am a second year computer science student.."],
+		strings: ["Hello...", "My name is Veeral Bhagat..", "I am a second year computer science major.."],
   typeSpeed:50,
   loop:true,
   showCursor:false
