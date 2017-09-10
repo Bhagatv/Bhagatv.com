@@ -6,6 +6,7 @@
   color:black;
   margin-top:10px;
   margin-left:10px;
+  cursor:pointer;
   padding-left:3px;
   padding-right:3px;
   transition: all .3s ease-out;
