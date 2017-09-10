@@ -58,10 +58,12 @@ scene.addIndicators();
 })
 
 
-var tween1 = TweenMax.to('.projects', 0.4, {
-  width:200,
-  height:200,
-  backgroundColor:'#ddd'
+var tween1 = TweenMax.to('#proj_wrapper', 0.4, {
+  //width:200,
+ // height:200,
+  width:790,
+  
+  
    
  
   });
@@ -92,6 +94,23 @@ var tween1 = TweenMax.to('.projects', 0.4, {
 	});
 //$('.button').style.color='black';
 
+  var tween2 = TweenMax.to('#photo_cont', 0.4, {
+  //backgroundColor:'#fff',
+  width:'100%'
   
+  
+   
+ 
+  });
+  
+  var scene2 = new ScrollScene({
+    triggerElement: '#photo_cont',
+    offset:-100 , 
+    duration:100
+    
+    
+  })
+  .setTween(tween2)
+  .addTo(scrollMagicController);
   
 });
