@@ -56,7 +56,7 @@ text-align:center;
 }
 #nav{
   z-index:1;
-  width:375px;
+  width:100vw;
   
   //background-color:white;
   position:fixed;
