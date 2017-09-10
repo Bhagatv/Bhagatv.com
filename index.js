@@ -68,7 +68,7 @@ var tween1 = TweenMax.to('.projects', 0.4, {
   
   var scene1 = new ScrollScene({
     triggerElement: '#code_cont',
-    offset: 100, 
+    offset: 50, 
     
     
   })
@@ -78,6 +78,11 @@ var tween1 = TweenMax.to('.projects', 0.4, {
 	$("#code").click(function() {
     $('body').animate({
         scrollTop: $("#code_cont").offset().top},
+        'slow');
+
+	$("#home").click(function() {
+    $('body').animate({
+        scrollTop: $("#home_cont").offset().top},
         'slow');
         
 
