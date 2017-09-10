@@ -80,14 +80,16 @@ var tween1 = TweenMax.to('.projects', 0.4, {
         scrollTop: $("#code_cont").offset().top},
         'slow');
 
-	$("#home").click(function() {
-    $('body').animate({
-        scrollTop: $("#home_cont").offset().top},
-        'slow');
+	
         
 
 });
 	
+	$("#home").click(function() {
+    $('body').animate({
+        scrollTop: $("#home_cont").offset().top},
+        'slow');
+	});
 //$('.button').style.color='black';
 
   
