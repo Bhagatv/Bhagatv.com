@@ -18,7 +18,7 @@ var tween = TweenMax.to('.button', 0.1, {
     
   .setTween(tween)
   .addTo(scrollMagicController);
-scene.addIndicators();
+//scene.addIndicators();
   document.getElementsByClassName('button')[0].style.backgroundColor='black';
      document.getElementsByClassName('button')[0].style.color='white';
   
