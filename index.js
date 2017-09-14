@@ -1,7 +1,5 @@
 $(function() {
-	
-	
-	cycle= function(n){
+    cycle= function(n){
 
 var img_list = ['https://image.prntscr.com/image/XxcMgMByT9Geuz7_3ZYu8w.jpg',
 								'https://image.prntscr.com/image/hDHXCdK6TG2bE-odMxXtiQ.jpg',
@@ -10,16 +8,22 @@ var img_list = ['https://image.prntscr.com/image/XxcMgMByT9Geuz7_3ZYu8w.jpg',
                 'https://image.prntscr.com/image/texyqCKHTO60VGXdKc11nQ.jpg',
                 'https://image.prntscr.com/image/B4h50BHfQCiCNfXlaP4SBA.jpg'
                 ]
+var caption_list = ['Bay Bridge | San Francisco, California',
+										'Sunset over UCI | Irvine, California',
+                    'Palace of Fine Arts | San Francisco, California',
+                    'Golden Gate Bridge | San Francisco, California',
+                    'Cloudy Sunset over UCI (2) | Irvine, California',
+                    'JW Marriott | Palm Desert, California']
 if (n<0){
  slideIndex = img_list.length-1;
 }
 else if (n>=img_list.length){
 slideIndex = 0;
 }
-$('#photo_container').fadeOut(100, function(){
+$('#photo_container').fadeOut(400, function(){
 document.getElementById('photo_container').src = img_list[slideIndex];
-
-}).fadeIn(100);
+document.getElementById('photo_capt').innerHTML = caption_list[slideIndex];
+}).fadeIn(400);
 
 
 }
@@ -238,38 +242,8 @@ $("#photo").click(function() {
     
     });
     
-    var slideIndex = 0;
-cycle(slideIndex);
 
-function next(n){
-cycle(slideIndex += n);
-}
-
-function prev(n){
-cycle(slideIndex += n);
-}
-
-function cycle(n){
-
-var img_list = ['https://image.prntscr.com/image/XxcMgMByT9Geuz7_3ZYu8w.jpg',
-								'https://image.prntscr.com/image/hDHXCdK6TG2bE-odMxXtiQ.jpg',
-								'https://image.prntscr.com/image/7GGjVcJqRzmZcRLX9Y65_g.jpg',
-                'https://image.prntscr.com/image/6pwOpei9RCOGtLQzVPu74w.jpg',
-                'https://image.prntscr.com/image/texyqCKHTO60VGXdKc11nQ.jpg',
-                'https://image.prntscr.com/image/B4h50BHfQCiCNfXlaP4SBA.jpg'
-                ]
-if (n<0){
- slideIndex = img_list.length-1;
-}
-else if (n>=img_list.length){
-slideIndex = 0;
-}
-$('#photo_container').fadeOut(100, function(){
-document.getElementById('photo_container').src = img_list[slideIndex];
-
-}).fadeIn(100);
-
-
-}
+    
     
 });
+
