@@ -205,3 +205,18 @@ height:50vw;
   border-radius:0 3px 3px 0;
   
 }
+#photo_capt{
+  transition: all .6s linear;
+  opacity:0;
+  font-size:10px;
+  color:white;
+  position:absolute;
+  bottom:3%;
+  font-family:Verdana,sans-serif;
+  font-style:bold;
+  text-align:center;
+  width:100%;
+}
+#containerdd:hover #photo_capt{
+  opacity:1;
+}
