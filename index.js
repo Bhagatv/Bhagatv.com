@@ -192,6 +192,38 @@ $("#photo").click(function() {
     
     });
     
-    
+    var slideIndex = 0;
+cycle(slideIndex);
+
+function next(n){
+cycle(slideIndex += n);
+}
+
+function prev(n){
+cycle(slideIndex += n);
+}
+
+function cycle(n){
+
+var img_list = ['https://image.prntscr.com/image/XxcMgMByT9Geuz7_3ZYu8w.jpg',
+								'https://image.prntscr.com/image/hDHXCdK6TG2bE-odMxXtiQ.jpg',
+								'https://image.prntscr.com/image/7GGjVcJqRzmZcRLX9Y65_g.jpg',
+                'https://image.prntscr.com/image/6pwOpei9RCOGtLQzVPu74w.jpg',
+                'https://image.prntscr.com/image/texyqCKHTO60VGXdKc11nQ.jpg',
+                'https://image.prntscr.com/image/B4h50BHfQCiCNfXlaP4SBA.jpg'
+                ]
+if (n<0){
+ slideIndex = img_list.length-1;
+}
+else if (n>=img_list.length){
+slideIndex = 0;
+}
+$('#photo_container').fadeOut(100, function(){
+document.getElementById('photo_container').src = img_list[slideIndex];
+
+}).fadeIn(100);
+
+
+}
     
 });
