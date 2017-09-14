@@ -172,3 +172,36 @@ td a{
   font-size:10px;
   
 }
+
+#photo_container{
+width:75vw;
+height:50vw;
+}
+.button_p{
+  position:absolute;
+  top:50%;
+  border-radius: 10px;
+  font-size:30px;
+  
+  color:white;
+  transition:all .6s ease-out;
+  padding:10px;
+  font-style:bold;
+  cursor:pointer;
+  
+}
+#prev{
+ left:0;
+}
+#next{
+ right:0;
+}
+#containerdd{
+  display:inline-block;
+  position:relative;
+}
+.button_p:hover{
+  background-color:black;
+  border-radius:0 3px 3px 0;
+  
+}
