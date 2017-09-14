@@ -1,5 +1,6 @@
 $(function() {
 	
+	
 	cycle= function(n){
 
 var img_list = ['https://image.prntscr.com/image/XxcMgMByT9Geuz7_3ZYu8w.jpg',
@@ -42,6 +43,7 @@ prev(-1);
 prev = function(n){
 cycle(slideIndex += n);
 }
+
 
     // Init Controller
     var scrollMagicController = new ScrollMagic();
