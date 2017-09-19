@@ -16,7 +16,9 @@
   
 }
 
-
+#home_cont{
+  position:relative;
+}
 #lol{
   color:black;
   font-size:24px;
@@ -223,4 +225,33 @@ height:50vw;
 }
 #containerdd:hover #photo_capt{
   opacity:1;
+}
+.contact{
+  
+  position:absolute;
+  bottom:0px;
+  
+  width:100%;
+}
+.l{
+  position:relative;
+   text-align:center;
+  width:auto;
+  cursor:pointer;
+  text-decoration:none;
+  transition:all 1s ease-in;
+  font-family:Lucida Sans Typewriter;
+  margin:10px;
+  color:black;
+}
+.contact_e{
+  text-decoration:none;
+  color:black;
+}
+@keyframes underline{
+  from{text-decoration:none;}
+  to{text-decoration:underline;}
+}
+.l:hover{
+ text-decoration:underline;
 }
