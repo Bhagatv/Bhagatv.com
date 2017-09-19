@@ -246,4 +246,3 @@ $("#photo").click(function() {
     
     
 });
-
