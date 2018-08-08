@@ -102,7 +102,7 @@ var tween = TweenMax.to('.button', 0.1, {
 });
   
   $("#lol").typed({
-		strings: ["Hello","My name is Veeral Bhagat", "I am a second year computer science major"],
+		strings: ["Hello","My name is Veeral Bhagat", "I am a third year computer science major"],
   typeSpeed:30,
   loop:true,
   showCursor:false
